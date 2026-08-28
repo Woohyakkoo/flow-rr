@@ -1,0 +1,16 @@
+[project]
+name = "flowrr"
+version = "0.1.0"
+description = "Self-supervised respiratory-rate estimation from facial video via optical-flow spatio-temporal maps"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "opencv-python>=4.8", "torch>=2.0", "h5py>=3.8"]
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["flowrr*"]
+
+[tool.ruff]
+line-length = 100
