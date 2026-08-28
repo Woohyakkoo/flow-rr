@@ -13,7 +13,6 @@ makes the ST-map front end (see flowrr/preprocess) part of the method rather tha
   wave  (B, T)                    out_ch=1, the default
   feat  (B, feat_dim, T)          feat_dim set, for frame-wise features
 """
-import torch
 import torch.nn as nn
 
 

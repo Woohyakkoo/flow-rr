@@ -7,7 +7,7 @@ intermediate face crops would cost.
 
   python -m flowrr.make_stmaps [--datasets cohface,mahnob,pure,ubfc] [--jobs 30] [--force]
 """
-import os, sys, json, argparse, traceback
+import os, json, argparse, traceback
 import numpy as np
 from multiprocessing import Pool
 

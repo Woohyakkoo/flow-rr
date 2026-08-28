@@ -14,3 +14,9 @@ include = ["flowrr*"]
 
 [tool.ruff]
 line-length = 100
+
+[tool.ruff.lint]
+# Pin the rule set explicitly. Without this, `select` follows whatever the installed ruff
+# ships as its default, so a version bump in CI turns unrelated style rules into build
+# failures — which is exactly what happened on 0.16.5 (86 findings, no real defects).
+select = ["E4", "E7", "E9", "F"]

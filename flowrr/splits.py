@@ -5,7 +5,7 @@ usable ST-map — so the counts reported are the counts that get trained on. Par
 at the SUBJECT level: no person appears in more than one of train/val/test, which is what
 makes the held-out ICC meaningful (ICC groups predictions by person).
 """
-import os, json, argparse
+import json, argparse
 import numpy as np
 from . import config as paths
 
