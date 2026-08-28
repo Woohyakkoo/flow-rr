@@ -20,3 +20,9 @@ line-length = 100
 # ships as its default, so a version bump in CI turns unrelated style rules into build
 # failures — which is exactly what happened on 0.16.5 (86 findings, no real defects).
 select = ["E4", "E7", "E9", "F"]
+# This codebase deliberately uses compact one-liners (`opt.zero_grad(); loss.backward()`)
+# and grouped imports (`import os, json, argparse`). Those are style choices, not defects,
+# so the formatting-only members of E4/E7 are off. The substantive ones stay on: E711/E712
+# (comparison bugs), E722 (bare except), E741 (ambiguous names), E9 (syntax errors) and all
+# of pyflakes.
+ignore = ["E401", "E402", "E701", "E702", "E731"]

@@ -190,7 +190,7 @@ def main():
         sub_table = "\n".join(SL)
         print("\n" + sub_table)
 
-    md = [f"# RR estimation results — face-flow PSD-InfoNCE (contrastive-rr-estimation method)\n",
+    md = ["# RR estimation results — face-flow PSD-InfoNCE (contrastive-rr-estimation method)\n",
           "Self-supervised (label-free) training; the respiration reference is used for "
           "evaluation only.\n",
           "## Metrics\n", table, "\n## Breakdown by subgroup\n",
